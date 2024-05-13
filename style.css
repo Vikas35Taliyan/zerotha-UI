@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --button-before: #387ED1;
+    --button-after: #222222;
+    --font-bold: #3E4D71;
+    --font-normal: #9D7775;
+}
+
 .navbar {
     width: 100vw;
-    
 }
 
 .nav-container {
@@ -49,10 +55,14 @@ margin-top: 20px;
     gap: 2rem;
 }
 
+.hero-heading h2 {
+    font-size: 3rem;
+}
+
 .hero-btn button{
     width: 160px;
     height: 40px;
-    background-color: blue;
+    background-color: var(--button-before, blue);
     color: white;
     text-decoration: none;
     margin-top: 20px;
@@ -60,4 +70,32 @@ margin-top: 20px;
 
 .stock {
     display: flex;
+    gap: 2rem;
+    justify-content: center;
+    /* justify-content: flex-start; */
+    margin-top: 3rem;
+}
+
+.stock-broker{
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+   justify-content: center;
+   /* align-items: center; */
+}
+
+.stock-head{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stock-feat{
+    display: flex;
+    gap: 3rem;
+    justify-content: start;
+}
+
+.stock-ads img{
+width: 70%;
 }
